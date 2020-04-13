@@ -5,13 +5,13 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "@hapi/good": "^8.2.1",
-    "@hapi/good-console": "^8.1.1",
-    "@hapi/good-squeeze": "^5.2.1",
-    "@hapi/hapi": "^18.3.2",
-    "@hapi/joi": "^16.1.7",
-    "p-queue": "^6.2.1",
-    "puppeteer": "^1.20.0"
+    "@hapi/good": "^9.0.0",
+    "@hapi/good-console": "^9.0.0",
+    "@hapi/good-squeeze": "^6.0.0",
+    "@hapi/hapi": "^19.1.1",
+    "@hapi/joi": "^17.1.1",
+    "p-queue": "^6.3.0",
+    "puppeteer": "^2.1.1"
   },
   "devDependencies": {
     "gulp": "^4.0.2",

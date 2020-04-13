@@ -15,6 +15,8 @@ Feel free to contribute! Another strategy is to restart the service using cron o
 
 ## Development setup
 
+Docker and docker-compose are recommended to run this web service.
+
 1. Clone and cd into project root.
 2. Run `yarn install`.
 3. Run `cd server && yarn install`

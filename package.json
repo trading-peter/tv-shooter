@@ -11,10 +11,7 @@
     "dev": "gulp dev"
   },
   "devDependencies": {
-    "@hapi/code": "^6.0.0",
-    "@hapi/hapi": "^18.3.2",
-    "@hapi/lab": "^20.2.2",
-    "eslint": "^6.3.0",
+    "eslint": "^6.8.0",
     "gulp": "^4.0.2"
   }
 }

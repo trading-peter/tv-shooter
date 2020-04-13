@@ -1,4 +1,4 @@
-FROM node:10.15.1-stretch
+FROM node:12.16.2-stretch
 
 EXPOSE 3333
 EXPOSE 9229
