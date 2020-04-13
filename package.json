@@ -1,0 +1,20 @@
+{
+  "name": "tv-shooter",
+  "version": "0.1.0",
+  "description": "Creates screenshots on trading view.",
+  "main": "server/src/index.js",
+  "repository": "git@github.com:pkaske/tv-shooter.git",
+  "author": "trading_peter",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "gulp dev"
+  },
+  "devDependencies": {
+    "@hapi/code": "^6.0.0",
+    "@hapi/hapi": "^18.3.2",
+    "@hapi/lab": "^20.2.2",
+    "eslint": "^6.3.0",
+    "gulp": "^4.0.2"
+  }
+}

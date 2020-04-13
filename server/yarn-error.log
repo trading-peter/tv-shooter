@@ -1,0 +1,42 @@
+Arguments: 
+  /home/pk/.nvm/versions/node/v10.16.3/bin/node /home/pk/.nvm/versions/node/v10.16.3/bin/yarn add @hapi/hapi @hapi/good @hapi/good-console @hapi/squeeze @hapi/inert @hapi/joi @hapi/nes
+
+PATH: 
+  /home/pk/.nvm/versions/node/v10.16.3/bin:/home/pk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  10.16.3
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@hapi%2fsqueeze: Not found
+      at Request.params.callback [as _callback] (/home/pk/.nvm/versions/node/v10.16.3/lib/node_modules/yarn/lib/cli.js:66830:18)
+      at Request.self.callback (/home/pk/.nvm/versions/node/v10.16.3/lib/node_modules/yarn/lib/cli.js:140464:22)
+      at Request.emit (events.js:198:13)
+      at Request.<anonymous> (/home/pk/.nvm/versions/node/v10.16.3/lib/node_modules/yarn/lib/cli.js:141436:10)
+      at Request.emit (events.js:198:13)
+      at IncomingMessage.<anonymous> (/home/pk/.nvm/versions/node/v10.16.3/lib/node_modules/yarn/lib/cli.js:141358:12)
+      at Object.onceWrapper (events.js:286:20)
+      at IncomingMessage.emit (events.js:203:15)
+      at endReadableNT (_stream_readable.js:1145:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
+
+npm manifest: 
+  {
+    "name": "server",
+    "version": "1.0.0",
+    "main": "src/index.js",
+    "license": "Proprietary",
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
