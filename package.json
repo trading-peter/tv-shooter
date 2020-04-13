@@ -1,6 +1,6 @@
 {
   "name": "tv-shooter",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Creates screenshots on trading view.",
   "main": "server/src/index.js",
   "repository": "git@github.com:pkaske/tv-shooter.git",
