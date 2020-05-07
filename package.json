@@ -1,6 +1,6 @@
 {
   "name": "tv-shooter",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Creates screenshots on trading view.",
   "main": "server/src/index.js",
   "repository": "git@github.com:pkaske/tv-shooter.git",
@@ -8,7 +8,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "gulp dev"
+    "dev": "docker-compose -f docker-compose-develop.yml up -d && docker-compose -f docker-compose-develop.yml logs -f --tail=50 nodejs",
+    "stop": "docker-compose -f docker-compose-develop.yml down"
   },
   "devDependencies": {
     "eslint": "^6.8.0",

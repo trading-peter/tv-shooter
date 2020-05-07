@@ -21,9 +21,9 @@ Docker and docker-compose are recommended to run this web service.
 2. Run `yarn install`.
 3. Run `cd server && yarn install`
 4. Set TradingView credentials and a signal secret in `dev.env`.
-5. Start the service with the `./start_dev.sh` script in the project root.
+5. Start the service with the `npm run dev` script in the project root.
 
-To stop the service run `./stop_dev.sh`;
+To stop the service run `npm run stop`;
 
 The server runs on port 3000 by default. You can check if the service was able to sign into TradingView using the screenshot in `./sc`.  
 Wait about a 1 minute for the screenshot to appear because the sign in process takes some time.
