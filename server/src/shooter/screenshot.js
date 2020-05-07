@@ -63,7 +63,7 @@ class Screenshot {
       polling: 500
     });
 
-    return page.waitFor(4000);
+    return page.waitFor(10000);
   }
 
   async take(url, symbol) {
@@ -85,7 +85,7 @@ class Screenshot {
             TradingViewApi.activeChart().setSymbol(symbol);
           });
         }, symbol);
-        
+
         await this.waitForChartData(page);
       }
 
