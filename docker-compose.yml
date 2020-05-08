@@ -4,7 +4,7 @@ services:
     container_name: tv-shooter-nodejs
     build:
       context: .
-      dockerfile: Dockerfile-develop
+      dockerfile: Dockerfile
     env_file: :
       - ./production.env
     ports:
