@@ -5,10 +5,11 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    env_file: :
+    env_file:
       - ./production.env
     ports:
       - "3000:3000"
     volumes:
       - ./server:/home/node/app/server
       - ./sc:/home/node/Downloads
+    restart: always
