@@ -28,9 +28,11 @@ class Screenshot {
       // Precaution measurement to prevent any security alerts at trading view in case they have such mechanisms.
       await page.click('body > div.tv-main > div.tv-header > div.tv-header__inner.tv-layout-width > div.tv-header__area.tv-header__area--right.tv-header__area--desktop > span.tv-header__dropdown-text > a');
       await page.waitFor(3000);
-      await page.type('#signin-form > div.tv-control-error > div.tv-control-material-input__wrap > input', options.username);
-      await page.type('#signin-form > div.tv-signin-dialog__forget-wrap > div.tv-control-error > div.tv-control-material-input__wrap > input', options.password);
-      await page.click('#signin-form > div.tv-signin-dialog__footer.tv-signin-dialog__footer--login > div.tv-signin-dialog__footer-item.tv-signin-dialog__footer-item--login > button');
+      await page.click('.tv-signin-dialog__toggle-email');
+      await page.waitFor(3000);
+      await page.type('#signin-form input[name="username"]', options.username);
+      await page.type('#signin-form input[name="password"]', options.password);
+      await page.click('#signin-form button[type="submit"]');
       await page.waitFor(20000);
   
       // Take a screenshot in case we need to see if the login worked.
