@@ -65,7 +65,7 @@ class Screenshot {
       polling: 500
     });
 
-    return page.waitFor(10000);
+    return page.waitFor(15000);
   }
 
   async take(url, symbol) {
