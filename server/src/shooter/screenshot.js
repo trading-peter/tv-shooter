@@ -30,9 +30,9 @@ class Screenshot {
       await page.waitFor(3000);
       await page.click('.tv-signin-dialog__toggle-email');
       await page.waitFor(3000);
-      await page.type('#signin-form input[name="username"]', options.username);
-      await page.type('#signin-form input[name="password"]', options.password);
-      await page.click('#signin-form button[type="submit"]');
+      await page.type('form[action="/accounts/signin/"] input[name="username"]', options.username);
+      await page.type('form[action="/accounts/signin/"] input[name="password"]', options.password);
+      await page.click('form[action="/accounts/signin/"] button[type="submit"]');
       await page.waitFor(20000);
   
       // Take a screenshot in case we need to see if the login worked.
