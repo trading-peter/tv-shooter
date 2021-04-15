@@ -102,7 +102,15 @@ class Screenshot {
         });
       });
 
-      const sc = `https://www.tradingview.com/x/${imageId}/`;
+      await page.goto(`https://www.tradingview.com/x/${imageId}/`);
+      await page.waitForSelector('img');
+
+      const sc = await page.evaluate(() => {
+        return new Promise((resolve, reject) => {
+          resolve(document.querySelector('img').src);
+        });
+      });
+
       await page.close();
 
       return sc;

@@ -2,6 +2,16 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Debug",
+      "program": "${workspaceFolder}/server/src/index.js",
+      "request": "launch",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "pwa-node",
+      "envFile": "${workspaceFolder}/dev.env"
+    },
+    {
       "type": "node",
       "request": "attach",
       "name": "Attach to Remote",

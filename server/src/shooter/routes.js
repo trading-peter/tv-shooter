@@ -39,7 +39,7 @@ class Routes {
             timeout: 10000,
             maxTries: 5,
             validateFnc: url => {
-              if (typeof url !== 'string' || !url.includes('https://www.tradingview.com/x/')) {
+              if (typeof url !== 'string' || !url.includes('.png')) {
                 this.server.log([ 'screenshot', 'warning' ], `Failed to generate screenshot. Trying again in 10 seconds.`);
                 return false;
               }
