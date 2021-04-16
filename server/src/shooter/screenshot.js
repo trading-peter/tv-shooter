@@ -74,6 +74,10 @@ class Screenshot {
     try {
       page = await this.getPage(url);
 
+      page.on('dialog', async dialog => {
+        await dialog.accept();
+      });
+
       // Need to wait for the chart to paint.
       await this.waitForChartData(page);
       
