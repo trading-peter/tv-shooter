@@ -5,7 +5,6 @@ class Screenshot {
     // To make things easy we just disable the sandbox.
     // Should be ok as we ever only visit tradingview.com.
     this._browser = await Puppeteer.launch({
-      headless: false,
       args: [
         '--disable-setuid-sandbox',
         '--no-sandbox'
