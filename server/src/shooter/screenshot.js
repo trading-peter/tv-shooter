@@ -5,6 +5,7 @@ class Screenshot {
     // To make things easy we just disable the sandbox.
     // Should be ok as we ever only visit tradingview.com.
     this._browser = await Puppeteer.launch({
+      headless: false,
       args: [
         '--disable-setuid-sandbox',
         '--no-sandbox'
@@ -26,7 +27,8 @@ class Screenshot {
       // Log into trading view.
       // We only do this once and keep the browser open.
       // Precaution measurement to prevent any security alerts at trading view in case they have such mechanisms.
-      await page.click('body > div.tv-main > div.tv-header > div.tv-header__inner.tv-layout-width > div.tv-header__area.tv-header__area--right.tv-header__area--desktop > span.tv-header__dropdown-text > a');
+      await page.click('button.js-header-user-menu-button');
+      await page.click('[data-name="header-user-menu-sign-in"]');
       await page.waitFor(3000);
       await page.click('.tv-signin-dialog__toggle-email');
       await page.waitFor(3000);
