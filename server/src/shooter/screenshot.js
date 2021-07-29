@@ -27,14 +27,16 @@ class Screenshot {
       // We only do this once and keep the browser open.
       // Precaution measurement to prevent any security alerts at trading view in case they have such mechanisms.
       await page.click('button.js-header-user-menu-button');
+      // Wait after clicking the button to make sure react has time to update the dom.
+      await page.waitForTimeout(3000);
       await page.click('[data-name="header-user-menu-sign-in"]');
-      await page.waitFor(3000);
+      await page.waitForTimeout(3000);
       await page.click('.tv-signin-dialog__toggle-email');
-      await page.waitFor(3000);
+      await page.waitForTimeout(3000);
       await page.type('form[action="/accounts/signin/"] input[name="username"]', options.username);
       await page.type('form[action="/accounts/signin/"] input[name="password"]', options.password);
       await page.click('form[action="/accounts/signin/"] button[type="submit"]');
-      await page.waitFor(20000);
+      await page.waitForTimeout(20000);
   
       // Take a screenshot in case we need to see if the login worked.
       await page.screenshot({ path: '/home/node/Downloads/loginSuccess.png' });
